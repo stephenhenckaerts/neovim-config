@@ -1,23 +1,29 @@
-vim.opt.nu = true
-vim.opt.relativenumber = true
+-- Display Settings
+vim.opt.nu = true                -- Show line numbers
+vim.opt.relativenumber = true    -- Show relative line numbers
+vim.opt.termguicolors = true     -- Enable true color support
+vim.opt.cursorline = true        -- Highlight the current line
+vim.opt.colorcolumn = "100"      -- Highlight column 100
+vim.opt.signcolumn = "yes"       -- Always show sign column
 
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
+-- Search Settings
+vim.opt.hlsearch = false         -- Don't highlight search results
+vim.opt.incsearch = true         -- Incremental search
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+-- Indentation and Tab Settings
+vim.opt.tabstop = 2              -- Set tabstop to 2 spaces
+vim.opt.softtabstop = 2          -- Use 2 spaces for tab while editing
+vim.opt.shiftwidth = 2           -- Use 2 spaces per indent
+vim.opt.expandtab = true         -- Convert tabs to spaces
 
-vim.opt.termguicolors = true
+-- Behavior Settings
+vim.opt.scrolloff = 8            -- Start scrolling 8 lines before the edge
+vim.opt.updatetime = 50          -- Time (in ms) before swap file is saved
+vim.opt.isfname:append("@-@")    -- Modify the behavior of word motions
 
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
+-- Clipboard Settings
+vim.opt.clipboard:append("unnamedplus")  -- Use system clipboard
 
-vim.opt.updatetime = 50
-
-vim.opt.colorcolumn = "100"
-
-vim.opt.clipboard:append("unnamedplus")
-
+-- Window Split Settings
+vim.opt.splitbelow = true        -- Horizontal splits appear below current window
+vim.opt.splitright = true        -- Vertical splits appear to the right of current window
