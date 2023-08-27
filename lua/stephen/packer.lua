@@ -1,43 +1,46 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
--- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-    -- Packer can manage itself
+    -- Core: Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    -- UI: Appearance and UI enhancements
+    use({ 'rose-pine/neovim', as = 'rose-pine' }) -- Color theme
+
+    -- File & Code Navigation: Tools for navigating and searching within projects
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.2',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use({ 'rose-pine/neovim', as = 'rose-pine' })
-
+    -- Code Parsing & Manipulation: Syntax trees, playgrounds, and more
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
 
+    -- Utilities: Plugins that provide general utility functionalities
     use('nvim-lua/plenary.nvim')
     use('ThePrimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
 
+    -- LSP & Autocompletion: Language Server Protocol and code autocompletion tools
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
         requires = {
             -- LSP Support
-            { 'neovim/nvim-lspconfig' },             -- Required
-            { 'williamboman/mason.nvim' },           -- Optional
-            { 'williamboman/mason-lspconfig.nvim' }, -- Optional
+            { 'neovim/nvim-lspconfig' },             -- Core LSP
+            { 'williamboman/mason.nvim' },           -- Mason LSP (Optional)
+            { 'williamboman/mason-lspconfig.nvim' }, -- Mason LSP Config (Optional)
 
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },     -- Required
-            { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' },     -- Required
+            { 'hrsh7th/nvim-cmp' },     -- Core Completion
+            { 'hrsh7th/cmp-nvim-lsp' }, -- LSP Completion
+            { 'L3MON4D3/LuaSnip' },     -- Snippets
         }
     }
 
-    use('github/copilot.vim')
+    -- Git & Version Control: Tools related to version control systems
+    use('github/copilot.vim') -- GitHub Copilot extension for Vim
 end)
