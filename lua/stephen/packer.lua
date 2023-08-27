@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
     use('ThePrimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
+    use('nvim-lualine/lualine.nvim')
 
     -- LSP & Autocompletion: Language Server Protocol and code autocompletion tools
     use {
