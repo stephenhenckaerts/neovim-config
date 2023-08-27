@@ -27,3 +27,11 @@ vim.opt.clipboard:append("unnamedplus")  -- Use system clipboard
 -- Window Split Settings
 vim.opt.splitbelow = true        -- Horizontal splits appear below current window
 vim.opt.splitright = true        -- Vertical splits appear to the right of current window
+
+-- Backup Settings
+vim.opt.backup = false               -- disable backup
+vim.opt.writebackup = false          -- disable backup when writing
+vim.opt.swapfile = false             -- disable swapfile
+vim.opt.undodir = '~/.nvim/undo'     -- set an undo directory
+vim.opt.undofile = true              -- enable persistent undo
+

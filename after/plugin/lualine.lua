@@ -21,8 +21,15 @@ require('lualine').setup {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
     lualine_c = {'filename'},
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
-    lualine_y = {'progress'},
+    lualine_x = {},
+    lualine_y = {
+      {
+        'filetype',
+        colored = true,
+        icon_only = false,
+        icon = { align = 'left' }
+      }
+    },
     lualine_z = {'location'}
   },
   inactive_sections = {
