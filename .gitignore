@@ -1,1 +1,30 @@
-~/
+# Backup files
+*~
+
+# Swap files
+*.swp
+*.swo
+
+# Undo files
+*.undo
+
+# Session files
+*.vim
+
+# Temp files
+*.tmp
+
+# Cache directories (e.g. from plugins like Deoplete)
+.cache/
+
+# OS-generated files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+desktop.ini  # Windows
+
+# If using Neovim's built-in LSP with a logging feature
+lsp.log
+
+# If you have a local folder for temporary or machine-specific config
+local/
+
