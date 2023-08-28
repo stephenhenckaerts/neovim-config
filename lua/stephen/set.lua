@@ -16,9 +16,6 @@ vim.opt.softtabstop = 2          -- Use 2 spaces for tab while editing
 vim.opt.shiftwidth = 2           -- Use 2 spaces per indent
 vim.opt.expandtab = true         -- Convert tabs to spaces
 
-vim.opt.autoindent = true             -- enable auto indentation
-vim.opt.smartindent = true            -- make smarter auto indentation
-
 -- Behavior Settings
 vim.opt.scrolloff = 8            -- Start scrolling 8 lines before the edge
 vim.opt.updatetime = 50          -- Time (in ms) before swap file is saved

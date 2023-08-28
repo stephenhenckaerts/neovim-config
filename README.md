@@ -38,3 +38,4 @@ This repository contains my personal NeoVim configuration, streamlined for a mod
 
 ### 7. **Git & Version Control**
 - [copilot.vim](https://github.com/github/copilot.vim) - GitHub Copilot extension for Vim.
+

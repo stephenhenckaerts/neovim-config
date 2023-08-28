@@ -25,8 +25,10 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use {
       'nvim-lualine/lualine.nvim',
-      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+      requires = { 'nvim-tree/nvim-web-devicons', opt = false }
     }
+    use('preservim/nerdtree')
+    use('jiangmiao/auto-pairs')
 
     -- LSP & Autocompletion: Language Server Protocol and code autocompletion tools
     use {
