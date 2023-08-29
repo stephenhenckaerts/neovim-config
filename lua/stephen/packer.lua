@@ -1,45 +1,49 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-    -- Core: Packer can manage itself
+    -- Packer
     use 'wbthomason/packer.nvim'
 
-    -- UI: Appearance and UI enhancements
+    -- UI & Appearance
     use { "catppuccin/nvim", as = "catppuccin" }
 
-    -- File & Code Navigation: Tools for navigating and searching within projects
+    -- Navigation & File Management
+    use 'preservim/nerdtree'
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.2',
-        requires = { { 'nvim-lua/plenary.nvim' } }
+        requires = { 'nvim-lua/plenary.nvim' }
     }
-
-    -- Code Parsing & Manipulation: Syntax trees, playgrounds, and more
-    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-    use('nvim-treesitter/playground')
-
-    -- Utilities: Plugins that provide general utility functionalities
-    use('nvim-lua/plenary.nvim')
-    use('ThePrimeagen/harpoon')
-    use('mbbill/undotree')
-    use('tpope/vim-fugitive')
-    use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'nvim-tree/nvim-web-devicons', opt = false }
-    }
-    use('preservim/nerdtree')
-    use('jiangmiao/auto-pairs')
     use{
       'ggandor/leap.nvim',
       requires = { 'tpope/vim-repeat' }
     }
+    use 'ThePrimeagen/harpoon'
 
-    -- LSP & Autocompletion: Language Server Protocol and code autocompletion tools
+    -- Code Parsing, Highlighting & Manipulation
     use {
-      'neoclide/coc.nvim',
-      branch = 'release'
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+    use 'nvim-treesitter/playground'
+    use 'jiangmiao/auto-pairs'
+
+    -- Utilities
+    use 'mbbill/undotree'
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = false }
+    }
+    use 'tpope/vim-fugitive'
+    use 'nvim-lua/plenary.nvim'
+
+    -- LSP & Autocompletion
+    use {
+        'neoclide/coc.nvim',
+        branch = 'release'
     }
 
-    -- Git & Version Control: Tools related to version control systems
-    use('github/copilot.vim') -- GitHub Copilot extension for Vim
+    -- Git & Version Control
+    use 'github/copilot.vim'
 end)
+
