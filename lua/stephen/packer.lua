@@ -5,7 +5,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- UI & Appearance
-    use { "catppuccin/nvim", as = "catppuccin" }
+    use { "ellisonleao/gruvbox.nvim" }
 
     -- Navigation & File Management
     use 'preservim/nerdtree'

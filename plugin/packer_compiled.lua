@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
-  catppuccin = {
-    loaded = true,
-    path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -93,6 +88,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
+  },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   harpoon = {
     loaded = true,
