@@ -5,7 +5,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- UI: Appearance and UI enhancements
-    use({ 'rose-pine/neovim', as = 'rose-pine' }) -- Color theme
+    use { "catppuccin/nvim", as = "catppuccin" }
 
     -- File & Code Navigation: Tools for navigating and searching within projects
     use {
@@ -29,22 +29,15 @@ return require('packer').startup(function(use)
     }
     use('preservim/nerdtree')
     use('jiangmiao/auto-pairs')
+    use{
+      'ggandor/leap.nvim',
+      requires = { 'tpope/vim-repeat' }
+    }
 
     -- LSP & Autocompletion: Language Server Protocol and code autocompletion tools
     use {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v2.x',
-        requires = {
-            -- LSP Support
-            { 'neovim/nvim-lspconfig' },             -- Core LSP
-            { 'williamboman/mason.nvim' },           -- Mason LSP (Optional)
-            { 'williamboman/mason-lspconfig.nvim' }, -- Mason LSP Config (Optional)
-
-            -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },     -- Core Completion
-            { 'hrsh7th/cmp-nvim-lsp' }, -- LSP Completion
-            { 'L3MON4D3/LuaSnip' },     -- Snippets
-        }
+      'neoclide/coc.nvim',
+      branch = 'release'
     }
 
     -- Git & Version Control: Tools related to version control systems
