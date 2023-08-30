@@ -5,7 +5,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- UI & Appearance
-    use { "ellisonleao/gruvbox.nvim" }
+    use ("joshdick/onedark.vim")
 
     -- Navigation & File Management
     use 'preservim/nerdtree'
