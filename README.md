@@ -27,11 +27,11 @@ This repository contains my personal NeoVim configuration, streamlined for a mod
 - [undotree](https://github.com/mbbill/undotree) - Visualize your undo history.
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - A blazing fast and extensible status line.
   - Dependencies: [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
+- [copilot.vim](https://github.com/github/copilot.vim) - GitHub Copilot extension for Vim.
 
 ### 6. **LSP & Autocompletion**
 - [coc.nvim](https://github.com/neoclide/coc.nvim) - Conquer of Completion for Neovim, an intellisense engine.
 
 ### 7. **Git & Version Control**
 - [vim-fugitive](https://github.com/tpope/vim-fugitive) - Git wrapper and commands within vim.
-- [copilot.vim](https://github.com/github/copilot.vim) - GitHub Copilot extension for Vim.
 
