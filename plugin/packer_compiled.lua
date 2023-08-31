@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  nerdcommenter = {
+    loaded = true,
+    path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/nerdcommenter",
+    url = "https://github.com/preservim/nerdcommenter"
+  },
   nerdtree = {
     loaded = true,
     path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/nerdtree",

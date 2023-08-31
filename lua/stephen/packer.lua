@@ -39,6 +39,7 @@ return require('packer').startup(function(use)
     }
     use 'tpope/vim-fugitive'
     use 'nvim-lua/plenary.nvim'
+    use 'preservim/nerdcommenter'
 
     -- LSP & Autocompletion
     use {
