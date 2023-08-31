@@ -1,13 +1,12 @@
--- Setting other NERDTree related options and behaviors
-vim.cmd('let g:NERDTreeQuitOnOpen = 1')
+-- Map <leader>pv to open NERDTree focused on the current file
+vim.api.nvim_set_keymap('n', '<leader>pv', ':NERDTreeFind<CR>', { noremap = true, silent = true })
 
--- Setting autocommands and custom commands for NERDTree
-vim.cmd([[
-    autocmd StdinReadPre * let s:std_in=1
-    autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd o | endif
-    autocmd FileType nerdtree setlocal relativenumber
-]])
+-- Close NERDTree when a file is opened
+vim.g.NERDTreeQuitOnOpen = 1
 
--- Setting custom command Ex to open NERDTree in current file's directory
-vim.cmd("command! Ex NERDTree %:p:h | wincmd o")
+-- Customize NERDTree behavior on `I` and `S`
+-- By default, NERDTree uses NERDTree-Map-ActivateNode-* maps.
+-- We'll override these to close NERDTree after opening in a split.
+vim.api.nvim_set_keymap('n', '<buffer><silent>I', ':NERDTree-Map-ActivateNode-VSplit<CR>:q<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<buffer><silent>S', ':NERDTree-Map-ActivateNode-Split<CR>:q<CR>', { noremap = true, silent = true })
 
