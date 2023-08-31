@@ -158,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/vim-repeat",
     url = "https://github.com/tpope/vim-repeat"
+  },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
   }
 }
 

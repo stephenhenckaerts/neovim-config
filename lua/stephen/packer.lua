@@ -4,6 +4,9 @@ return require('packer').startup(function(use)
     -- Packer
     use 'wbthomason/packer.nvim'
 
+    -- Start Screen
+    use 'mhinz/vim-startify'
+
     -- UI & Appearance
     use ("joshdick/onedark.vim")
 
