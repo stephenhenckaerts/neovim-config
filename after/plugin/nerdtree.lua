@@ -1,4 +1,4 @@
-vim.api.nvim_set_keymap('n', '<leader>pv', ':NERDTreeFind<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>pv', ':NERDTreeToggle<CR>', { noremap = true, silent = true })
 
 vim.cmd [[
   autocmd FileType nerdtree setlocal number relativenumber
