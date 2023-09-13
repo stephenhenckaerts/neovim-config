@@ -23,11 +23,8 @@ require('telescope').setup{
         -- Set custom keybindings for Telescope's insert mode
         mappings = {
             i = {
-                -- Map Ctrl-i to split horizontally and open the selected file/item
-                ["<C-s>"] = require("telescope.actions").select_horizontal,
-                
-                -- Map Ctrl-s to split vertically and open the selected file/item
-                ["<C-i>"] = require("telescope.actions").select_vertical
+                ["<C-i>"] = require("telescope.actions").select_horizontal,
+                ["<C-s>"] = require("telescope.actions").select_vertical
             }
         }
     }

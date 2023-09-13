@@ -32,7 +32,7 @@ vim.opt.splitright = true        -- Vertical splits appear to the right of curre
 vim.opt.backup = false               -- disable backup
 vim.opt.writebackup = false          -- disable backup when writing
 vim.opt.swapfile = false             -- disable swapfile
-vim.opt.undodir = '~/.nvim/undo'     -- set an undo directory
+vim.opt.undodir = '~/.config/nvim/undo//' -- set a unique undo directory
 vim.opt.undofile = true              -- enable persistent undo
 
 -- Autoread Settings
