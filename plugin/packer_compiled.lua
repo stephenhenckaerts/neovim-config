@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/auto-pairs",
@@ -104,6 +109,26 @@ _G.packer_plugins = {
     path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  neotest = {
+    loaded = true,
+    path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/neotest",
+    url = "https://github.com/nvim-neotest/neotest"
+  },
+  ["neotest-jest"] = {
+    loaded = true,
+    path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/neotest-jest",
+    url = "https://github.com/nvim-neotest/neotest-jest"
+  },
+  ["neotest-plenary"] = {
+    loaded = true,
+    path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/neotest-plenary",
+    url = "https://github.com/nvim-neotest/neotest-plenary"
+  },
+  ["neotest-vim-test"] = {
+    loaded = true,
+    path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/neotest-vim-test",
+    url = "https://github.com/nvim-neotest/neotest-vim-test"
+  },
   nerdcommenter = {
     loaded = true,
     path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/nerdcommenter",
@@ -113,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/Users/stephenhenckaerts/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-treesitter"] = {
     loaded = true,

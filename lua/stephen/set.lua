@@ -28,6 +28,14 @@ vim.opt.clipboard:append("unnamedplus")  -- Use system clipboard
 vim.opt.splitbelow = true        -- Horizontal splits appear below current window
 vim.opt.splitright = true        -- Vertical splits appear to the right of current window
 
+-- Auto resize split windows when the terminal window is resized
+vim.cmd [[
+  augroup AutoResizeSplits
+    autocmd!
+    autocmd VimResized * wincmd =
+  augroup END
+]]
+
 -- Backup Settings
 vim.opt.backup = false               -- disable backup
 vim.opt.writebackup = false          -- disable backup when writing
